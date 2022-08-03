@@ -1,0 +1,199 @@
+@import "./utilities.css";
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    --webkit-font-smoothing: antialiased;
+
+}
+header{
+    background:var(--dark);
+    padding:10px 0;
+    height: 34.5rem;
+    /* clip-path: polygon(0 0,100% 0,100% 100%,80% 87%, 0 100%);  */
+    /* border-radius: 100%/0 0 100px 30px; */
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration:none;
+    margin-right: 20px;
+    text-transform:uppercase;
+    transition:all .3s ease;
+}
+header nav .left a:hover{
+    color: var(--primary)
+}
+.container{
+    max-width: 1152px;
+    margin:0 auto;
+}
+header nav .left .myportfolio img{
+    width:8rem;
+    height:5rem;
+    margin-right: 35px;
+    
+}
+.heroine {
+    padding:3rem 0;
+}
+    
+.heroine .left img{
+    width:80%;
+    height:inherit;
+    border-radius: 100%;
+    border: 0.1px solid var(--pure);
+    margin-bottom: -1rem;
+   
+}
+.heroine .left img:hover{
+    border: 0.1px solid var(--primary);
+}
+.heroine .right{
+    color: var(--pure);
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.heroine .right h6{
+    font-size:1.8rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.heroine .right h1{
+    font-size:4rem ;
+    font-weight:100 ;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+
+}
+.heroine .right h1 span{
+    color: var(--primary);
+}
+.heroine .right p{
+    line-height:2;
+    margin-bottom:2rem;
+}
+.about{
+    margin-bottom: 8rem;
+}
+section .container{
+   padding-bottom: 6rem;;
+}
+section .container .myimg{
+    width: 20rem;
+    height: inherit;
+}
+section .container .aboutme h1{
+    margin-bottom:1rem;
+    font-size:2rem;  
+}
+section .container .aboutme h1 span{
+    color: var(--primary);
+}
+section .container .aboutme h3{
+    font-size:1.1rem;
+    margin-bottom:1rem;
+    font-weight:400;
+    
+}
+section .container .aboutme p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height:1.9;
+    margin-bottom:1rem;
+}
+section .container .aboutme .p2{
+    margin-bottom:2.5rem;
+}
+section .container .aboutme {
+    padding:0 10rem;
+    display: flex-end;
+}
+section .container{
+    margin-bottom:30px;
+   margin-top: -5rem;
+   font-weight: 400;
+}
+
+section .container .aboutme .social a{
+    display: flex;
+    color: var(--primary);
+    background:var(--dark);
+    height:35px;
+    width:35px;
+    margin-top: 10px;
+    margin:5px;
+    border-radius: 50%;
+    transition:all .3s ease-in-out;
+}
+section .container .aboutme .social a:hover{
+  
+   color: var(--dark);
+    background:var(--primary);
+}
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height:0.5rem;
+    font-size:2rem; 
+    padding-top: 5rem;
+}
+.section-heading span{
+    color: var(--primary);
+}
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+    font-size:1.1rem;
+}
+.skills{
+    background:var(--light);
+}
+.skills .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:2rem;
+    grid-row-gap:5rem;
+}
+.skills .card-wrapper .card{
+    background-color:var(--pure);
+    padding:2rem 3rem;
+    position:relative;
+    padding-top: 4rem;
+    text-align: center;
+    transition:all .3s ease;
+}
+.skills .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform:translateX(-50%)
+}
+.skills .card-wrapper .card h2{
+    font-size:1.15rem;
+    margin-bottom:1rem;
+}
+.skills .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height:1.6rem;
+}
+.skills .card-wrapper .card:hover{
+    background-color: var(--dark);
+}
+.skills .card-wrapper .card:hover h2,.skills .card-wrapper .card:hover p{
+    color: var(--pure);
+}
